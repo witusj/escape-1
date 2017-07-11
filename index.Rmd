@@ -1,0 +1,24 @@
+---
+title: "Escape"
+author: "Stanisław Czernicki"
+output:
+  bookdown::pdf_book: default
+  bookdown::gitbook: default
+site: bookdown::bookdown_site
+documentclass: book
+translation: Robert-Jan ten Hove
+---
+
+# Introduction
+
+This document is dedicated to my old-uncle Stanisław Czernicki.
+```{r , echo = FALSE, fig.cap = 'Dyrektor Stanislaw Czernicki.', out.width='40%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics(rep("Images/Czernicki.pdf", 1))
+```
+
+Recently, I stumbled upon a Polish book in someone's bookcase: ‘*Stories from teachers*’. The first chapter was written by Stanisław and tells the story of his escape from the concentration camp. This project is to translate the story from Polish to English, and to do a background research on the mentioned names. 
+
+```{r , echo = FALSE, fig.cap = 'Teachers memories.', out.width='40%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics(rep("Images/cover.pdf", 1))
+```
+
