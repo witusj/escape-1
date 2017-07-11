@@ -11,7 +11,7 @@ translation: Robert-Jan ten Hove
 
 # Introduction
 
-This document is dedicated to my old-uncle Stanisław Czernicki.
+This document is dedicated to my uncle Stanisław Czernicki.
 ```{r , echo = FALSE, fig.cap = 'Dyrektor Stanislaw Czernicki.', out.width='40%', fig.asp=.75, fig.align='center'}
 knitr::include_graphics(rep("Images/Czernicki.pdf", 1))
 ```
