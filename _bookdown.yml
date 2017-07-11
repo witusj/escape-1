@@ -1,0 +1,6 @@
+book_filename: "escape"
+language:
+  ui:
+    chapter_name: "Chapter "
+output-dir: "book"
+
