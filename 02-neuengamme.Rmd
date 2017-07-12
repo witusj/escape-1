@@ -1,0 +1,16 @@
+# Neuengamme {#neuengamme}
+
+Our journey was long. Our bones aching from sitting. Around noon on the third day we arrived at a small station near Hamburg called Neuengamme. We got surrounded by young punks from the SS of around seventeen - eighteen years old. Of course, with rifles, bayonets and dogs. After an hour's march we came to a concrete square. Around us, miserable barracks, and next to them even more miserable human skeletons. Between the barracks wire-fences, probably to prevent making contact with each other. After Auschwitz, the camp seemed to us at that time as a camp-site. The terrible state of the local prisoners savouring our horror, that in a few weeks, we'll look the same.
+
+```{r , echo = FALSE, fig.cap = 'A sick Polish survivor in the Hannover-Ahlem subcamp receives medicine from the Red Cross, 11 April 1945', out.width='40%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics(rep("Images/A_sick_Polish_survivor_in_the_Hannover-Ahlem_concentration_camp_receives_medicine_from_a_German_Red_Cross_worker.jpg", 1))
+```
+
+They separated us into blocks. We got the new numbers. I received a number 18 665. Instead of striped pyjamas, we were provided civilian clothes that belonged to those that were killed. On the clothes, a red cross painted with oil paint on the chest and backside. No jews were in the camp, except for those who lived under an faked name. The majority of the prisoners were German politicians (the Communists), otherwise it was a bit of criminals-burglars, and the rest were Poles. This camp already had several branches: Bremen, Varge, Dritte and others. Prisoners from the Neuengamme were often sent to these branches.
+
+A thousand of healthy, reasonably well-looking prisoners, those who already had a unbelievable experience and only saved from death by chance, they revived the camp.
+
+On the third day we were led to a long square, still covered with snow. On the other side of the square was kennel in which there were 50 dogs. On this square, a gun factory had to be built, called Fertigungstelle. Further 500 meters to the east there was a canal, on which boats and tugs were moving, importing sand for the construction of future factories and other construction materials. Next to the canal was a large brick factory.
+
+The construction manager was a tall SS man, Unterscharführer Rese, called by the prisoners Maciejewski. The name was given because, like the cat Maciejewski, he killed people. The function of oberkapa was filled by prisoner Walter Block, a decent German-communist. They divided us into groups. First, we moved earth, then we brought in the materials. I was assigned to a group of moving sand. We carried is by barrows, four persons per barrow. From the canal to the construction site. We were constantly on the move. It was terribly cold - coastal winds pierced the flesh to the bone. Everyone who could, collected some paper from cement bags and put it in the underwear. But pity to him who got caught. He got a beating until it was to painful to watch. However, we were forced to cross the ordinance, as the cold were unbearable, often aggravated by rainy-snow. The effects of the cold soon came to us. On our heads and necks we got ulcers, tormenting us incredibly.
+
