@@ -16,9 +16,13 @@ This document is dedicated to my uncle Stanisław Czernicki.
 knitr::include_graphics(rep("Images/Czernicki.jpg", 1))
 ```
 
-Once, I stumbled upon a Polish book in someone's bookcase: ‘*Stories from teachers*’. The first chapter was written by Stanisław and tells the story of his escape from the concentration camp. This project is to translate the story from Polish to English, and to do a background research on the mentioned names. 
+Once, I stumbled upon a Polish book in someone's bookcase: ‘*Stories from teachers*’. The first chapter was written by Stanisław. He is the brother of my grand-mother. I never got to know him in person, but I heard stories about him. This story tells about his escape from the concentration camp. This project is to translate the story from Polish to English, and to do a background research on the mentioned names. 
 
 ```{r , echo = FALSE, fig.cap = 'Teachers memories.', out.width='40%', fig.asp=.75, fig.align='center'}
 knitr::include_graphics(rep("Images/cover.JPG", 1))
 ```
 
+
+```{r , echo = FALSE, fig.cap = 'from Hitlers prisoners and concentration camps.', out.width='40%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics(rep("Images/inside.JPG", 1))
+```
