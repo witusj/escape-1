@@ -8,6 +8,16 @@ knitr::include_graphics(rep("Images/A_sick_Polish_survivor_in_the_Hannover-Ahlem
 
 They separated us into blocks. We got the new numbers. I received a number 18 665. Instead of striped pyjamas, we were provided civilian clothes that belonged to those that were killed. On the clothes, a red cross painted with oil paint on the chest and backside. No jews were in the camp, except for those who lived under an faked name. The majority of the prisoners were German politicians (the Communists), otherwise it was a bit of criminals-burglars, and the rest were Poles. This camp already had several branches: Bremen, Varge, Dritte and others. Prisoners from the Neuengamme were often sent to these branches.
 
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(leaflet)
+
+m <- leaflet() %>% setView(lng=10.233499066, lat=53.4249983, zoom=8) %>%
+  addTiles() %>% # Add default OpenStreetMap map tiles
+  addMarkers(lng=10.233499066, lat=53.4249983, popup="Neuengamme concentration camp")
+m  # Print the map
+```
+
+
 A thousand of healthy, reasonably well-looking prisoners, those who already had a unbelievable experience and only saved from death by chance, they revived the camp.
 
 On the third day we were led to a long square, still covered with snow. On the other side of the square was kennel in which there were 50 dogs. On this square, a gun factory had to be built, called Fertigungstelle. Further 500 meters to the east there was a canal, on which boats and tugs were moving, importing sand for the construction of future factories and other construction materials. Next to the canal was a large brick factory.
