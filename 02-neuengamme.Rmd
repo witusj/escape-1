@@ -17,7 +17,8 @@ m <- leaflet() %>% setView(lng=10.233499066, lat=53.4249983, zoom=8) %>%
 m  # Print the map
 ```
 
-
+<br>
+<br>
 A thousand of healthy, reasonably well-looking prisoners, those who already had a unbelievable experience and only saved from death by chance, they revived the camp.
 
 On the third day we were led to a long square, still covered with snow. On the other side of the square was kennel in which there were 50 dogs. On this square, a gun factory had to be built, called Fertigungstelle. Further 500 meters to the east there was a canal, on which boats and tugs were moving, importing sand for the construction of future factories and other construction materials. Next to the canal was a large brick factory.
