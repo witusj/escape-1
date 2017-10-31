@@ -1,3 +1,12 @@
+---
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+
+
 # Neuengamme {#neuengamme}
 
 Our journey was long. Our bones aching from sitting. Around noon on the third day we arrived at a small station near Hamburg called Neuengamme. We got surrounded by young punks from the SS of around seventeen - eighteen years old. Of course, with rifles, bayonets and dogs. After an hour's march we came to a concrete square. Around us, miserable barracks, and next to them even more miserable human skeletons. Between the barracks wire-fences, probably to prevent making contact with each other. After Auschwitz, the camp seemed to us at that time as a camp-site. The terrible state of the local prisoners savouring our horror, that in a few weeks, we'll look the same.
@@ -16,6 +25,7 @@ m <- leaflet() %>% setView(lng=10.233499066, lat=53.4249983, zoom=8) %>%
   addMarkers(lng=10.233499066, lat=53.4249983, popup="Neuengamme concentration camp")
 m  # Print the map
 ```
+
 
 <br>
 <br>

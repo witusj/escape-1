@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Family {#family}
 
 After an hour we reached the estate. We had to wait until the evening, so we hid in the woods just off the highway. One after an other, the hours passed by. We hoped that someone would take care of us. I did not know Bolek's aunt, but I've done everything I could to make myself happy, and most importantly, I'm going to sleep all night.
