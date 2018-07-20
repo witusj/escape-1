@@ -33,7 +33,7 @@ library(leaflet)
 places <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1Q-e6imHd6-bLSqyAakmeKyPIFaCt1lFY0z83hzjcz7A/edit?usp=sharing")
 
 leaflet(places, width = 900) %>%
-  addTiles() %>%
+  addProviderTiles(providers$Stamen.Toner) %>%
   addCircleMarkers(lng = ~Longitude,
              lat = ~Latitude,
              label = ~Name,

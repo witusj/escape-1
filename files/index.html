@@ -54,6 +54,8 @@
 <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-binding-2.0.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.1.17/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.1/leaflet-providers-plugin.js"></script>
 
 
 
@@ -109,7 +111,7 @@
 <div id="introduction" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
 This document is dedicated to my uncle Stanisław Czernicki.
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
 <img src="Images/Czernicki.jpg" alt="Dyrektor Stanislaw Czernicki." width="40%" />
 <p class="caption">
 Figure 1.1: Dyrektor Stanislaw Czernicki.
@@ -117,20 +119,20 @@ Figure 1.1: Dyrektor Stanislaw Czernicki.
 </div>
 <p>Once, I stumbled upon a Polish book in someone’s bookcase: ‘<em>Stories from teachers</em>’. The first chapter was written by Stanisław. He is the brother of my grand-mother. I never got to know him in person, but I heard stories about him. This story tells about his escape from the concentration camp. This project is to translate the story from Polish to English, and to do a background research on the mentioned names.</p>
 <em>- Robert-Jan ten Hove - </em>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
 <img src="Images/cover.JPG" alt="Teachers memories." width="40%" />
 <p class="caption">
 Figure 1.2: Teachers memories.
 </p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-11"></span>
 <img src="Images/inside.JPG" alt="from Hitlers prisoners and concentration camps." width="40%" />
 <p class="caption">
 Figure 1.3: from Hitlers prisoners and concentration camps.
 </p>
 </div>
-<div id="htmlwidget-450e43ee884b9eca0f31" style="width:900px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-450e43ee884b9eca0f31">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[50.0344,53.4249983,52.26887,51.49698,52.39057,52.52,52.58719,52.6,52.448333,52.5985,53.13445,52.63963,52.40637,51.27814,51.2186,50.34838,49.9637],[19.20978,10.23349907,10.52677,11.9688,13.06447,13.405,14.64945,15.5,15.588333,15.8925,15.85164,16.1741,16.92517,17.98906,18.56892,18.91572,20.1216],6,null,null,{"interactive":true,"className":"","stroke":true,"color":"red","weight":5,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.2},null,null,null,null,["Oswiecim","Neuengamme","Braunschweig","Halle","Potsdam","Berlin","Kostrzyn","Skwierzyna","Międzyrzecze","Międzychod","Zatom","Ryżyn","Poznan","Kępno","Wielun","Bytom","Biskupice"],{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":true,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[19.20978,10.23349907,10.52677,11.9688,13.06447,13.405,14.64945,15.5,15.588333,15.8925,15.85164,16.1741,16.92517,17.98906,18.56892,18.91572,20.1216],"lat":[50.0344,53.4249983,52.26887,51.49698,52.39057,52.52,52.58719,52.6,52.448333,52.5985,53.13445,52.63963,52.40637,51.27814,51.2186,50.34838,49.9637]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":false,"fillColor":"#03F","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[49.9637,53.4249983],"lng":[10.23349907,20.1216]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-121d0d36b26257009b0e" style="width:900px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-121d0d36b26257009b0e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Stamen.Toner",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[50.0344,53.4249983,52.26887,51.49698,52.39057,52.52,52.58719,52.6,52.448333,52.5985,53.13445,52.63963,52.40637,51.27814,51.2186,50.34838,49.9637],[19.20978,10.23349907,10.52677,11.9688,13.06447,13.405,14.64945,15.5,15.588333,15.8925,15.85164,16.1741,16.92517,17.98906,18.56892,18.91572,20.1216],6,null,null,{"interactive":true,"className":"","stroke":true,"color":"red","weight":5,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.2},null,null,null,null,["Oswiecim","Neuengamme","Braunschweig","Halle","Potsdam",null,"Kostrzyn","Skwierzyna","Międzyrzecze","Międzychod","Zatom","Ryżyn",null,"Kępno","Wielun","Bytom","Biskupice"],{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":true,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[19.20978,10.23349907,10.52677,11.9688,13.06447,13.405,14.64945,15.5,15.588333,15.8925,15.85164,16.1741,16.92517,17.98906,18.56892,18.91572,20.1216],"lat":[50.0344,53.4249983,52.26887,51.49698,52.39057,52.52,52.58719,52.6,52.448333,52.5985,53.13445,52.63963,52.40637,51.27814,51.2186,50.34838,49.9637]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":false,"fillColor":"#03F","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[49.9637,53.4249983],"lng":[10.23349907,20.1216]}},"evals":[],"jsHooks":[]}</script>
 
 </div>
             </section>
