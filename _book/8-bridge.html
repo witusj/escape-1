@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Escape" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Stanisław Czernicki" />
+
+
+
+<meta name="description" content="Escape">
+
+<title>Escape</title>
+
+<script src="libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.1/leaflet.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="2-auschwitz.html#auschwitz"><span class="toc-section-number">2</span> Auschwitz</a></li>
+<li><a href="3-neuengamme.html#neuengamme"><span class="toc-section-number">3</span> Neuengamme</a></li>
+<li><a href="4-braunschweig.html#braunschweig"><span class="toc-section-number">4</span> Braunschweig</a></li>
+<li><a href="5-birthday.html#birthday"><span class="toc-section-number">5</span> The Birthday</a></li>
+<li><a href="6-run.html#run"><span class="toc-section-number">6</span> The Run</a></li>
+<li><a href="7-lift.html#lift"><span class="toc-section-number">7</span> The Lift</a></li>
+<li><a href="8-bridge.html#bridge"><span class="toc-section-number">8</span> The Bridge</a></li>
+<li><a href="9-hunger.html#hunger"><span class="toc-section-number">9</span> Hunger</a></li>
+<li><a href="10-family.html#family"><span class="toc-section-number">10</span> Family</a></li>
+<li><a href="11-fiancee.html#fiancee"><span class="toc-section-number">11</span> Fiancee</a></li>
+<li><a href="12-stations.html#stations"><span class="toc-section-number">12</span> Stations</a></li>
+<li><a href="13-hiding.html#hiding"><span class="toc-section-number">13</span> Hiding</a></li>
+<li><a href="14-work.html#work"><span class="toc-section-number">14</span> Work</a></li>
+<li><a href="15-epilogue.html#epilogue"><span class="toc-section-number">15</span> Epilogue</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="bridge" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> The Bridge</h1>
+<p>Around 19hr we reached Kostrzyn. Here we were showed the route and we were told to cross the Oder before 20hr later we would not be allowed to. They blinked at us expressively. We concluded that they were well aware of our situation.</p>
+<p>We did as we were advised. We almost reached the Odra. It was dark. On the Odra the traffic is tremendous. Full of troops. We did not stop for a moment. Over the Odra there was a footbridge of over a meter wide. Near the footbridge was a guard station. He did not stop us. After that, at the first foot-pillar of the bridge, there stood a second guard-house. In front of it there stood around fifteen guards, somewhat strangely dressed. They looked at us but no one interfered with us. We went the second foot-pillar of the bridge. There was a narrow kind of rails. We went through these rails to the tunnel and into the square where the signpost was. Darkness everywhere. Bolek put me on the signpost. I read: Stettin, Schwerin. We stood at a crossroad without knowing where to go. Bolek reminded himself of a German football team from Schwerin, who had played matches with Międzychód before the war. Apparently, it is a town located somewhere close to the border.</p>
+<p>We headed towards Schwerin. We went into the woods. We wanted to get through it before the morning because we expected some German defences in the neighbourhood. On the way we read the signposts to the nearest towns - just in case. We did it within in a very short time. Maybe we already made 10 km, when we left the road, 300 m away, we noticed an illuminated building. Apparently some barracks. We entered the forest and unexpectedly we stood eye to eye with the soldier on guard. He was in charge of military warehouses. He shouted: “Halt!” A dog jumped out. He sniffed us and went back to the guardhouse. In a moment, without waiting for the guard to continue and before he knew, we were already next to him. “Why are you yelling?” I called and patted him on the shoulder. In case he would shoot, he would have had his piece, enough to cross to the other world. Apparently he noticed a German uniform because he hesitated. He lowered the rifle, which he had ready to fire. I told him we were going to the next village to buy something to eat. When we would come back, we would give him some. Without waiting for his consent, we set off in the designated direction.</p>
+<p>On the way we met civilians on bicycles, who looked diligently at us. I looked at Bolek, he at me, but we did not see anything unusual that might draw their attention. After we lost sight of them, we went into the forest and all the way though the grove along the brook. Here in the thickets we sat down for a while and … fell asleep. We must have slept for quite some time. We woke up from screams: “Deserters! Deserters!”I opened one eye. Over me stood a young German about twenty with a fusion prepared shooting me, and next to him a German women of about eighteen. They were watching us closely. I closed my eyes again, but immediately I jumped to him. He dropped the fusion, stepped back, and screamed out from the distance: “Deserters!”, Threatening the gendarmerie. Near the hut was the there was a rattle.</p>
+<p>With one jump we were back into the forest and until evening we went and ran in unknown direction. In the evening we went out to the edge of the forest. We noticed two men covering a potato mound. Next to the mound stood a horse and an empty carriage. I went unnoticed under the mound. Having heard Polish talking, I went over. There were two of them. I greeted them in Polish. In the course of the conversation I learned that they are on the job. They promised to give us something to eat and even to sleep. I called Bolek, who at the time provided back-up. We got on the car and still during the light of the day we reached the village. They told us to wait. They were supposed to bring some cooked food. We couldn’t have waited; apparently they were too scared to help us out. After an hour, one of them came and ordered us to flee, because there is inspection. We did not have anything else but to actually march off.</p>
+
+</div>
+<p style="text-align: center;">
+<a href="7-lift.html"><button class="btn btn-default">Previous</button></a>
+<a href="9-hunger.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

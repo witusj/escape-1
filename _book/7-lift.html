@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Escape" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Stanisław Czernicki" />
+
+
+
+<meta name="description" content="Escape">
+
+<title>Escape</title>
+
+<script src="libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.1/leaflet.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="2-auschwitz.html#auschwitz"><span class="toc-section-number">2</span> Auschwitz</a></li>
+<li><a href="3-neuengamme.html#neuengamme"><span class="toc-section-number">3</span> Neuengamme</a></li>
+<li><a href="4-braunschweig.html#braunschweig"><span class="toc-section-number">4</span> Braunschweig</a></li>
+<li><a href="5-birthday.html#birthday"><span class="toc-section-number">5</span> The Birthday</a></li>
+<li><a href="6-run.html#run"><span class="toc-section-number">6</span> The Run</a></li>
+<li><a href="7-lift.html#lift"><span class="toc-section-number">7</span> The Lift</a></li>
+<li><a href="8-bridge.html#bridge"><span class="toc-section-number">8</span> The Bridge</a></li>
+<li><a href="9-hunger.html#hunger"><span class="toc-section-number">9</span> Hunger</a></li>
+<li><a href="10-family.html#family"><span class="toc-section-number">10</span> Family</a></li>
+<li><a href="11-fiancee.html#fiancee"><span class="toc-section-number">11</span> Fiancee</a></li>
+<li><a href="12-stations.html#stations"><span class="toc-section-number">12</span> Stations</a></li>
+<li><a href="13-hiding.html#hiding"><span class="toc-section-number">13</span> Hiding</a></li>
+<li><a href="14-work.html#work"><span class="toc-section-number">14</span> Work</a></li>
+<li><a href="15-epilogue.html#epilogue"><span class="toc-section-number">15</span> Epilogue</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="lift" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> The Lift</h1>
+<p>After some rest, we went out to the edge of town. It was already around eight o’clock. Two more hours of walking and we found ourselves in front of a yellow sign reading “Berlin-West.” A few light beams of the sun came through. In the bushes we dried our clothes. We shaved, and with a piece of our ragged prisoner clothes we had under the SS uniforms, we cleaned our shoes and improving our looks somewhat, we moved over South of Berlin to the east. On the way we saw many destructions and ruins. A military unit marched through the street. The commander gave us the honour, which of course we responded to, and without the slightest hassle we went further.</p>
+<p>On the way we passed some factories, fenced with wires. Some of them - newly built. In front of one of the factories we noticed ‘stamped’ people walking around unrestrained. The first of a kind we met with a “P” and the “U” sign. We assumed that “P” is a Pole. We went up to one man with the stamp “P”. I first asked in German what this stamp means. He replied. Then in Polish I asked where he came from and what he was doing here. He replied that he was from Lódz. He was taken to work. To work in a factory. I told him who we were and we ask for help. He gave us 10 mark and showed us the way to the tram. Today, I wish I could thank him again , because neither his name nor his place of residence is known to me.</p>
+<p>From the bridge over the river Spree, we took the tram to Berlin-East station. On the way, however, we changed plans. We were afraid of check-ups at the station by the military police. We went further, to the main highway in the direction of Frankfurt and Kostrzyn. We got off there. We wanted to take the road to reach some small station where there would be no checks for on getting on and buying a ticket.</p>
+<p>The map we had ended after Berlin. The road we set off did not lead to the train station. Guided by our senses, we headed east. The entire route was filled with driving cars, which forced us to go of the road. We entered a military area and moved along the line, leaving Berlin behind us. On the way we picked potatoes from the mounds. We fried them in the woods. Back on strengths, we went on the main road. We stopped a truck. Two workers and a chauffeur were sitting in it. We asked them to take us to Kostrin because we were in a hurry. We needed to present ourselves for the army. We were going to the battlefront. They were surprised. They talked to each other until they finally demanded documents.</p>
+<p>As our only document, we showed the gun. I sat down with the chauffeur and Bolek with the workers, and ordered them to move. They drove without a word. I do not know whether they were afraid or whether they were foreigners, because we encountered marching troops on the way, we were passing a town and the car did not stop for a moment.</p>
+
+</div>
+<p style="text-align: center;">
+<a href="6-run.html"><button class="btn btn-default">Previous</button></a>
+<a href="8-bridge.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

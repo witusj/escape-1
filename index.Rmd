@@ -1,9 +1,6 @@
 ---
 title: "Escape"
 author: "Stanisław Czernicki"
-output:
-  bookdown::pdf_book: default
-  bookdown::gitbook: default
 site: bookdown::bookdown_site
 documentclass: book
 translation: Robert-Jan ten Hove
@@ -27,3 +24,25 @@ knitr::include_graphics(rep("Images/cover.JPG", 1))
 ```{r , echo = FALSE, fig.cap = 'from Hitlers prisoners and concentration camps.', out.width='40%', fig.asp=.75, fig.align='center'}
 knitr::include_graphics(rep("Images/inside.JPG", 1))
 ```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(tidyverse)
+library(gsheet)
+library(leaflet)
+
+places <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1Q-e6imHd6-bLSqyAakmeKyPIFaCt1lFY0z83hzjcz7A/edit?usp=sharing")
+
+leaflet(places, width = 900) %>%
+  addTiles() %>%
+  addCircleMarkers(lng = ~Longitude,
+             lat = ~Latitude,
+             label = ~Name,
+             color = "red",
+             radius = 6,
+             labelOptions = labelOptions(noHide = T, textOnly = TRUE)
+             ) %>%
+  addPolylines(lng = ~Longitude,
+               lat = ~Latitude)
+```
+
+

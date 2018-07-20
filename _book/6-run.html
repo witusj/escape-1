@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Escape" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Stanisław Czernicki" />
+
+
+
+<meta name="description" content="Escape">
+
+<title>Escape</title>
+
+<script src="libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.1/leaflet.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="2-auschwitz.html#auschwitz"><span class="toc-section-number">2</span> Auschwitz</a></li>
+<li><a href="3-neuengamme.html#neuengamme"><span class="toc-section-number">3</span> Neuengamme</a></li>
+<li><a href="4-braunschweig.html#braunschweig"><span class="toc-section-number">4</span> Braunschweig</a></li>
+<li><a href="5-birthday.html#birthday"><span class="toc-section-number">5</span> The Birthday</a></li>
+<li><a href="6-run.html#run"><span class="toc-section-number">6</span> The Run</a></li>
+<li><a href="7-lift.html#lift"><span class="toc-section-number">7</span> The Lift</a></li>
+<li><a href="8-bridge.html#bridge"><span class="toc-section-number">8</span> The Bridge</a></li>
+<li><a href="9-hunger.html#hunger"><span class="toc-section-number">9</span> Hunger</a></li>
+<li><a href="10-family.html#family"><span class="toc-section-number">10</span> Family</a></li>
+<li><a href="11-fiancee.html#fiancee"><span class="toc-section-number">11</span> Fiancee</a></li>
+<li><a href="12-stations.html#stations"><span class="toc-section-number">12</span> Stations</a></li>
+<li><a href="13-hiding.html#hiding"><span class="toc-section-number">13</span> Hiding</a></li>
+<li><a href="14-work.html#work"><span class="toc-section-number">14</span> Work</a></li>
+<li><a href="15-epilogue.html#epilogue"><span class="toc-section-number">15</span> Epilogue</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="run" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> The Run</h1>
+<p>We decided to go for it. In the beginning we went off-roads. Crossing fields and through the forests. We avoided villages and people. In the morning we arrived at stacks of grain in the clearing. Further march was impossible. We hid in a pile of straw. A little sleep, meditating on our fate. Hunger began to tease us. We strengthen ourselves on raw carrot and cabbage and waited for the night. We could not go by roads. Our compass were the stars. We had bad luck, because for the whole three-week trip the weather was bad. Rain or cloudy nights did not allow us to get a good sense of direction. After three days of walking we decided to figure out where exactly we were going. We went to a village to read signposts for direction and place names. We had assumed that these three nights we walked for 100 km. It turned out that we are only 20 km from the place of escape and were walking back in the direction of the camp.</p>
+<p>On the edge of the forest we entered the fenced area, were we could not get out. A large German shepherd ran to us, sniffed and walked away. He saw a German uniform, but did not sense who it got in it. There was a flash light. We saw the mast, and the Nazi flag. Nearby stood a police station. Despite the lack of strength with incredible speed we were outside the fence - to get as far as possible.</p>
+<p>Sometimes we lied through the whole day in haystacks. In the fields we saw farmers plowing. Soggy patches, mud and rains forced us to take risks. We decided to march along roads, on which cars were moving. The direction of our march led to Berlin. Food we gained in different ways.</p>
+<p>In different ways we struggled through Germany. Only a novelist could describe our journey, strewn with thousands of surprises.</p>
+<p>One evening we reached some village. In one of the houses the light was on. We approached, of course, weapons in hand. A large family was speaking Ukrainian. We called the host. We told him to bring a loaf of bread and 5 Mark. He brought it. We gave him a pack of cigarettes. Both sides were happy.</p>
+<p>Mostly we walked between the hours of 20 pm to 4 am, because then the Landwache descended from their posts. We got a long way. We reached Halle. Bypassing the city from the North, we encountered some dugout. We went to one of them and to our surprise we noticed the gun in the stands and the bunks full of soldiers, both sides completely full. One soldier apparently doing night duty gave salute and wanted to report something. We asked only for the way, of course in a opposite direction, and we left. I think they were an outposts anti-aircraft artillery.</p>
+<p>On the second day, after traveling about 30 km, we lie under a haystack. Suddenly we hear the barking of dogs. Straight at us group goes hunting. Germans in hunting attire with dogs. They came to the railroad tracks. Apparently they did not want to go over the tracks, they turned into the drive. Meanwhile, we slipped out of the entanglement. Only the people who working on the field digging potatoes and beet, started to insult us and called out: “Deserters!”. It was in the evening. Quickly we went through the fields and entered in a meadow, where, in the bushes next to a brook, we waited for the night. We came to the conclusion that this way we won’t get far. More and more surprises on the way. You can fall in one without even knowing when. We decided to try to ride the train. We had 5 marks and this encouraged us. The railway line Halle-Berlin is connected to the narrow-gauge railway line, encircling Berlin from the South. It was almost to the eastern border of Berlin. We decided to take this route and get outside Berlin, where the former Polish-German border seemed close to us. We arrived at the small railway station on the Elbe. We purchased tickets to the next station to the other side of the river. We expected that these 5 marks for this purpose would be used up. It turned out that tickets were much cheaper. We still have 2 mark, for which we bought a beer, and the rest for bread rolls. After an hour, the train came. We set off in the direction of Berlin. On the train was mandatory blackout. It was very beneficial for us. There wasn’t any control on the train. We drove to our station for which we bought the tickets. Had to get off, but inside the train, so warm, pleasant. We stayed sitting and made the kilometres while outside the wind and rain whistled. We did not get off. The closer we got to Berlin, the more travellers got on the train. Mostly military. An officer asked me about something. I pretended to be asleep. He did not ask me anything more. We eventually got to Potsdam. Almost everyone got out. We also headed to the station, but the view controllers and the military startled us on time. Discreetly we retreated to the other side of the train. Rails, jump over the fence and we ended up on the street. It was about 23 hours. We wanted to get out of town, but in no way could not find the right way. We went astray for about four hours. In the end, we rested in a park with tall trees. A light rain fell. At dawn, we looked at each other with pity. We looked like two paupers. Enough for anyone seeing us, at once to be recognised as fugitives. We moved on further exploring a way out of the city. The city began getting more traffic. Right at the checkpoint we saw gendarmes. We sat on a bench and thought about what to do next. Two gendarmes clearly glared at us, but did not hooked on. Skulls on our caps and collars deterred everyone.</p>
+
+</div>
+<p style="text-align: center;">
+<a href="5-birthday.html"><button class="btn btn-default">Previous</button></a>
+<a href="7-lift.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>
