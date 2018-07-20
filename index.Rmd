@@ -39,7 +39,7 @@ leaflet(places, width = 900) %>%
              label = ~Name,
              color = "red",
              radius = 6,
-             labelOptions = labelOptions(noHide = T, textOnly = TRUE)
+             labelOptions = labelOptions(noHide = T, textOnly = T)
              ) %>%
   addPolylines(lng = ~Longitude,
                lat = ~Latitude)
